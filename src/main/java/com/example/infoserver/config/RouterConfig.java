@@ -13,8 +13,8 @@ public class RouterConfig {
     @Bean
     public RouterFunction<ServerResponse> route(PostHandler postHandler) {
         return RouterFunctions.route()
-                .GET("/hello",
-                        postHandler::createHello)
+                .GET("/info-service/uri",
+                        postHandler::infoService)
                 .build();
 
     }

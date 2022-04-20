@@ -10,7 +10,7 @@ import reactor.core.publisher.Mono;
 @Component
 public class PostHandler {
 
-    public Mono<ServerResponse> createHello(ServerRequest serverRequest) {
+    public Mono<ServerResponse> infoService(ServerRequest serverRequest) {
 
         return ServerResponse
                 .ok()
